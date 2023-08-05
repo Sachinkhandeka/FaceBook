@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-page-SocialBook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-------------Nav bar for socialbook--------------->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                  <!------ Company logo-->
+            <img src="logo.png" class="logo">
+            </a>
+          
+            <ul>
+                <!------- some other imp icons -------->
+                <li><img src="notification.png"></li>
+                <li><img src="inbox.png"></li>
+                <li><img src="video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <!--------- Search box to enhane user experience-->
+            <div class="search-box">
+                <img src="search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <!--------- your Profile (our happy users..)  ------------>
+            <div class="nav-user-icon online" onclick="settingMenuToggle()">
+                <img src="profile-pic.png" >
+            </div>
+        </div>
+
+        <!----------- Seeting menu for user profile -------->
+        <div class="setting-menu">
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="profile-pic.png">
+                    <div>
+                        <p>John Robbinsion</p>
+                        <a href="profile.html">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new  design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="setting.png" class="setting-icon">
+                    <a href="#">Settings & privacy <img src="arrow.png" style="width: 0.5rem;"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="help.png" class="setting-icon">
+                    <a href="#">help & Support<img src="arrow.png" style="width: 0.5rem;"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="display.png" class="setting-icon">
+                    <a href="#">Display & Accessibility<img src="arrow.png" style="width: 0.5rem;"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="logout.png" class="setting-icon">
+                    <a href="#">Logout<img src="arrow.png" style="width: 0.5rem;"></a>
+                </div>
+            </div>  
+        </div>
+    </nav> 
+
+    <!--------- profile Page ------------>
+    <div class="profile-container">
+        <img src="cover.png" class="cover">
+
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="profile.png" class="pd-img">
+                    <div>
+                        <h3>Jack Anderson</h3>
+                        <p>120 Friends - 23 mutual</p>
+                        <img src="member-1.png">
+                        <img src="member-2.png">
+                        <img src="member-3.png">
+                        <img src="member-4.png">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="add-friends.png">Friend</button>
+                <button type="button"><img src="message.png">Message</button>
+                <br>
+                <a href="#"><img src="more.png"></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+
+
+            <!-- Profile information clmn-->
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">
+                        Stop going trough life , start growing through life!
+                        <img src="feeling.png" >
+                    </p>
+                    <hr>
+                    <ul>
+                        <li><img src="profile-job.png"> Director at 123media Ltd</li>
+                        <li><img src="profile-study.png"> Studied at Amity Univercity</li>
+                        <li><img src="profile-study.png"> Went to DPS Mumbai</li>
+                        <li><img src="profile-home.png"> Lives in Mumbai , India</li>
+                        <li><img src="profile-location.png"> From Mumbai , India</li>
+                    </ul>
+                </div>
+
+
+                <div class="profile-intro">
+                    <div class="tittle-box">
+                        <h3>Photos</h3>
+                        <a href="#">All Photos</a>
+                    </div>
+                   
+                    <div class="photo-box">
+                        <div><img src="photo1.png"></div>
+                        <div><img src="photo2.png"></div>
+                        <div><img src="photo3.png"></div>
+                        <div><img src="photo4.png"></div>
+                        <div><img src="photo5.png"></div>
+                        <div><img src="photo6.png"></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="tittle-box">
+                        <h3>Friends</h3>
+                        <a href="#">All Friends</a>
+                    </div>
+                    <p>120(10 mutual)</p>
+                   
+                    <div class="friends-box">
+                        <div><img src="member-1.png">Torkeyo R</div>
+                        <div><img src="member-2.png">Petter W</div>
+                        <div><img src="member-3.png">Lisha A</div>
+                        <div><img src="member-4.png">Jack A</div>
+                        <div><img src="member-5.png">Anthony E</div>
+                        <div><img src="member-6.png">Michael A</div>
+                        <div><img src="member-7.png">Edward M</div>
+                        <div><img src="member-8.png">Brandon C</div>
+                        <div><img src="member-9.png">James D</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--post information -->
+            <div class="post-col">
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>John Robbinsion</p>
+                                <small>public <i class="fa-solid fa-sort-down"></i></small>
+                            </div>  
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+    
+                    <!--------  textarea to write something ------->
+                    <div class="post-input-textarea">
+                        <textarea  rows="3" placeholder="Whats on your mind John ?"></textarea>
+    
+                        <div class="add-post-links">
+                            <a href="#"><img src="live-video.png">Live Video</a>
+                            <a href="#"><img src="photo.png">Photo/Video</a>
+                            <a href="#"><img src="feeling.png">Feeling/Activity</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="post-container-post">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>John Robbinsion</p>
+                                <span>
+                                    June 24 2023 , 13:37 pm
+                                </span>
+                            </div>
+                        </div> 
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p>
+                        As I have said , the first thing is to be honest with yourself.
+                        You can never have a impact on <span>Society</span> if you have 
+                        not changed yourself... Great peacemaker are all people of integrety,
+                        of honesty , but humility. <a href="#">#Thoughts </a><a href="#">#YouTubeThoughts </a>
+                    </p>  
+                    <img src="feed-image-1.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like-blue.png">400</div>
+                            <div><img src="comments.png">60</div>
+                            <div><img src="share.png">09</div>
+                        </div>
+                        <div class="post-profile-icon">
+                              <img src="profile-pic.png"><i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div> 
+    
+                <!---------- Post2 ----------->
+                <div class="post-container-post">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>John Robbinsion</p>
+                                <span>
+                                    June 24 2023 , 13:37 pm
+                                </span>
+                            </div>
+                        </div> 
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p>
+                        As I have said , the first thing is to be honest with yourself.
+                        You can never have a impact on <span>Society</span> if you have 
+                        not changed yourself... Great peacemaker are all people of integrety,
+                        of honesty , but humility. <a href="#">#Thoughts </a><a href="#">#YouTubeThoughts </a>
+                    </p>  
+                    <img src="feed-image-2.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like.png">120</div>
+                            <div><img src="comments.png">42</div>
+                            <div><img src="share.png">15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                              <img src="profile-pic.png"><i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>  
+    
+                <!-------------Post3 ------------>
+                <div class="post-container-post">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>John Robbinsion</p>
+                                <span>
+                                    June 24 2023 , 13:37 pm
+                                </span>
+                            </div>
+                        </div> 
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p>
+                        As I have said , the first thing is to be honest with yourself.
+                        You can never have a impact on <span>Society</span> if you have 
+                        not changed yourself... Great peacemaker are all people of integrety,
+                        of honesty , but humility. <a href="#">#Thoughts </a><a href="#">#YouTubeThoughts </a>
+                    </p>  
+                    <img src="feed-image-3.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like.png">120</div>
+                            <div><img src="comments.png">42</div>
+                            <div><img src="share.png">15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                              <img src="profile-pic.png"><i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!---------- post4 -------------->
+                <div class="post-container-post">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>John Robbinsion</p>
+                                <span>
+                                    June 24 2023 , 13:37 pm
+                                </span>
+                            </div>
+                        </div> 
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p>
+                        As I have said , the first thing is to be honest with yourself.
+                        You can never have a impact on <span>Society</span> if you have 
+                        not changed yourself... Great peacemaker are all people of integrety,
+                        of honesty , but humility. <a href="#">#Thoughts </a><a href="#">#YouTubeThoughts </a>
+                    </p>  
+                    <img src="feed-image-4.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like.png">120</div>
+                            <div><img src="comments.png">42</div>
+                            <div><img src="share.png">15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                              <img src="profile-pic.png"><i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div> 
+                <!---------- post5 ---------------> 
+                <div class="post-container-post">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>John Robbinsion</p>
+                                <span>
+                                    June 24 2023 , 13:37 pm
+                                </span>
+                            </div>
+                        </div> 
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p>
+                        As I have said , the first thing is to be honest with yourself.
+                        You can never have a impact on <span>Society</span> if you have 
+                        not changed yourself... Great peacemaker are all people of integrety,
+                        of honesty , but humility. <a href="#">#Thoughts </a><a href="#">#YouTubeThoughts </a>
+                    </p>  
+                    <img src="feed-image-5.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like.png">120</div>
+                            <div><img src="comments.png">42</div>
+                            <div><img src="share.png">15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                              <img src="profile-pic.png"><i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>  
+                <button type="button" class="load-more-btn">Load Mode</button>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <!------- footer for copyright-->
+    <div class="footer">
+        <p>CopyRight 2023 - All reserved by Sachin Khandeka </p>
+    </div>
+
+    <!--------Js------>
+    <script src="script.js"></script>
+</body>
+</html>
